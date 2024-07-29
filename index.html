@@ -3,32 +3,164 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página con estilos de Bootstrap</title>
-    <!-- Enlace al archivo CSS de Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <title>Reglamento Campeonato de Trivias de WWE</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #f2f2f2;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+        }
+        nav {
+            background: #2c2c2c;
+            padding: 15px;
+            margin: 20px auto;
+            border-radius: 10px;
+            width: 80%;
+            max-width: 400px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            margin: 10px 0;
+        }
+        nav ul li a {
+            padding: 10px 15px;
+            background: #555;
+            color: #f2f2f2;
+            text-decoration: none;
+            border-radius: 5px;
+            display: block;
+            transition: background 0.3s;
+        }
+        nav ul li a:hover {
+            background: #777;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        h1, h2, h3 {
+            color: #aaa;
+        }
+        .btn-volver {
+            display: inline;
+            padding: 5px 10px;
+            background: #555;
+            color: #f2f2f2;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+            font-size: 0.9em;
+        }
+        .btn-volver:hover {
+            background: #777;
+        }
+    </style>
 </head>
 <body>
-    <form>
-        <h1>Formulario registro</h1>
-        <div class="form-group">
-          <label for="exampleInputEmail1"><strong>Email:</strong></label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-          <small id="emailHelp" class="form-text text-muted">Nunca compartiremos tu correo con nadie.</small>
-        </div>
-        <div class="form-group">
-          <label for="exampleInputPassword1"><strong>Contraseña:</strong></label>
-          <input type="password" class="form-control" id="exampleInputPassword1">
-        </div>
-        <div class="form-group form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-          <label class="form-check-label" for="exampleCheck1">Recuerdame</label>
-        </div>
-        <button type="submit" class="btn btn-primary">Registrar</button>
-      </form>
+    <header>
+        <h1>CAMPEONATO DE TRIVIAS DE WWE</h1>
+        <h2>Reglamento Oficial</h2>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#descripcion">Descripción</a></li>
+            <li><a href="#participacion">Participación</a></li>
+            <li><a href="#horarios">Horarios y Fechas</a></li>
+            <li><a href="#plataforma">Plataforma y Formato</a></li>
+            <li><a href="#puntuacion">Puntuación y Clasificación</a></li>
+            <li><a href="#eleccion">Elección de los luchadores</a></li>
+            <li><a href="#reglas">Reglas Generales</a></li>
+            <li><a href="#speed">Reglamento Campeonato Speed</a></li>
+            <li><a href="#disputas">Mecanismos de Resolución de Disputas</a></li>
+            <li><a href="#sanciones">Responsabilidades y Sanciones</a></li>
+        </ul>
+    </nav>
 
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-    </div>
+    <section id="descripcion">
+        <h3>Descripción <a class="btn-volver" href="#top">[volver]</a></h3>
+        <p>El Campeonato de Trivias de WWE es una competencia emocionante que se lleva a cabo en tres marcas: Undisputed WWE Universal Championship (para SmackDown), World Heavyweight Championship (para RAW) y NXT Championship (para NXT). Las preguntas giran en torno a la historia de la WWE, incluyendo luchadores, eventos históricos, movimientos especiales, títulos y campeonatos, entre otros temas relevantes.</p>
+    </section>
+
+    <section id="participacion">
+        <h3>Participación <a class="btn-volver" href="#top">[volver]</a></h3>
+        <p>Para unirte al Campeonato de Trivias de WWE, comunícate con @triviaswwe a través de Instagram para recibir la invitación a los grupos de WhatsApp correspondientes a cada marca.</p>
+    </section>
+
+    <section id="horarios">
+        <h3>Horarios y Fechas <a class="btn-volver" href="#top">[volver]</a></h3>
+        <p>Las trivias se llevan a cabo en las siguientes fechas y horarios:</p>
+        <ul>
+            <li>RAW: Todos los lunes a partir de las 21:00hs Argentina.</li>
+            <li>NXT: Todos los miércoles a partir de las 21:00hs Argentina.</li>
+            <li>SmackDown: Todos los viernes a partir de las 21:00hs Argentina.</li>
+            <li>PPVs y Lives: Días y horarios a definir.</li>
+        </ul>
+    </section>
+
+    <section id="plataforma">
+        <h3>Plataforma y Formato <a class="btn-volver" href="#top">[volver]</a></h3>
+        <p>El campeonato se lleva a cabo exclusivamente en WhatsApp. Cada marca tiene su grupo respectivo, además de un grupo de difusión donde se compartirán fechas, fixtures, tablas de posiciones y otras noticias relevantes. También existe un grupo llamado "WWE Backstage" donde todos los participantes pueden reunirse para discutir el torneo, lucha libre y otros temas relacionados. Por lo tanto, los grupos para Shows como RAW, SmackDown, Speed y PLE son solamente utilizados para las luchas y está prohibido hablar por ese medio. Todos los grupos están conectados por la Comunidad de Trivias de WWE.</p>
+    </section>
+
+    <section id="puntuacion">
+        <h3>Puntuación y Clasificación <a class="btn-volver" href="#top">[volver]</a></h3>
+        <p>Los puntos se otorgan de la siguiente manera:</p>
+        <ul>
+            <li>Ganador: 3 puntos.</li>
+            <li>Derrotado: 0 puntos.</li>
+            <li>Empate: 1 punto para cada luchador.</li>
+        </ul>
+    </section>
+
+    <section id="eleccion">
+        <h3>Elección de los luchadores <a class="btn-volver" href="#top">[volver]</a></h3>
+        <p>A partir de la finalización del Road to Money in the Bank 2024 (22 de julio), queda inaugurada la sección Alumni en la descripción de ⚫ Comunidad Trivias WWE ⚫. Esto significa que ya no se permite elegir luchadores que fueron ocupados anteriormente por otro jugador de Trivias, con el objetivo de respetar el legado y la historia de cada luchador.</p>
+        <p>Para cambiar de luchador/PJ, se deben cumplir los siguientes requisitos:</p>
+        <ul>
+            <li>Pedirlo con tiempo durante algún Road y esperar a que dicha competición termine.</li>
+            <li>Que el luchador/PJ a cambiar no se encuentre ni en el roster actual ni en la sección alumni.</li>
+            <li>Haber cumplido al menos 1 año representando al actual luchador/PJ.</li>
+        </ul>
+    </section>
+
+    <section id="reglas">
+        <h3>Reglas Generales <a class="btn-volver" href="#top">[volver]</a></h3>
+        <ul>
+            <li>Las respuestas deben ser escritas de manera completa y sin faltas de ortografía para que se consideren válidas.</li>
+            <li>Los participantes deben mantenerse activos en los grupos y participar en las trivias de manera puntual.</li>
+            <li>Se requiere respeto mutuo entre todos los participantes.</li>
+            <li>Está estrictamente prohibido hacer trampa, como salirse del chat para utilizar buscadores en línea o compartir respuestas con otros luchadores. Se utilizará como método las llamadas de atención a aquellos que hagan uso de estas trampas. A la segunda llamada de atención se procederá a restarle un punto al luchador. Llegadas las tres llamadas de atención el luchador queda automáticamente descalificado del combate.</li>
+            <li>No hace falta utilizar el término "The" en respuestas como The Undertaker, The Ultimate Warrior, The Big Show. También en Tag Teams / Stables como The Hardy Boyz, The Final Testament, entre otros.</li>
+            <li>Solo es obligatorio utilizar el término del anterior Ítem en casos como The Miz, The Rock, The Usos, The Shield, The Revival, The Bloodline, The Authority.</li>
+            <li>No se tomará en cuenta como respuesta un mensaje editado que contenía anteriormente una respuesta incorrecta, se deberá contestar la pregunta en un nuevo mensaje.</li>
+            <li>A la hora de responder preguntas como "Finisher de" o "Theme Song de" se tomará como respuesta válida cualquier canción o finisher que haya tenido el luchador mencionado en toda su carrera, a menos de que se pida el actual.</li>
+        </ul>
+    </section>
+
+    <section id="speed">
+        <h3>Reglamento Campeonato Speed <a class="btn-volver" href="#top">[volver]</a></h3>
+        <p>Podrán competir por este título aquellos competidores que no sean o hayan sido campeones individuales de otro título (Undisputed WWE Championship, World Heavyweight Championship, Intercontinental Championship, United States Championship, NXT Championship). Además, si eres el vigente poseedor del Tag Team Championship no podrás competir en la división, pudiendo hacerlo solo luego de perder el mismo.</p>
+        <p>El formato de los combates no titulares será de 3 preguntas cortas de rápida respuesta, la cual deberá estar de manera completa (no se aceptan abreviaciones).</p>
+        <p>El formato de los combates titulares será de 5 preguntas cortas de rápida respuesta la cual deberá estar de manera completa (no se aceptan abreviaciones).</p>
+    </section>
+
+    <section id="disputas">
+        <h3>Mecanismos de Resolución de Disputas <a class="btn-volver" href="#top">[volver]</a></h3>
+        <p>Cualquier queja o reclamación será analizada por los administradores del campeonato, quienes tomarán la decisión correspondiente a cada caso. Su determinación será definitiva y no estará sujeta a apelación.</p>
+    </section>
+
+    <section id="sanciones">
+        <h3>Responsabilidades y Sanciones <a class="btn-volver" href="#top">[volver]</a></h3>
+        <p>Los participantes son responsables de cumplir con las reglas establecidas en este reglamento. El incumplimiento grave o reiterado de las normas puede resultar en sanciones, que pueden incluir la descalificación del campeonato.</p>
+        <p>¡Disfruta del Campeonato de Trivias de WWE y demuestra tus conocimientos sobre la lucha libre!</p>
+    </section>
 </body>
 </html>
